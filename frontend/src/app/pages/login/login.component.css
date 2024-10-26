@@ -1,4 +1,4 @@
-main{
+body{
     height: 100vh; 
     margin: 0; 
     background: linear-gradient(to top, rgb(234, 238, 250) 50%, rgb(162, 208, 252) 90% );
@@ -15,7 +15,7 @@ main{
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 20px;
-    background: #F0F9FE
+    background-color: #F0F9FE
     
 }
 
@@ -114,3 +114,4 @@ img {
     transform: scale(1.05);
     background-color: #1f8146;
 }
+

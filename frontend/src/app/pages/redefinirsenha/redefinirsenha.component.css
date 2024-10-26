@@ -1,4 +1,4 @@
-main{
+body{
     height: 100vh; 
     margin: 0; 
     background: linear-gradient(to top, rgb(234, 238, 250) 50%, rgb(162, 208, 252) 90% );
