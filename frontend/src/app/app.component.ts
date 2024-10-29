@@ -5,12 +5,15 @@ import { LoginComponent } from './pages/login/login.component';
 import { RedefinirsenhaComponent } from './pages/redefinirsenha/redefinirsenha.component';
 import { RecuperarsenhaComponent } from './pages/recuperarsenha/recuperarsenha.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AdminComponent } from "./pages/admin/admin.component";
+import { EstoqueComponent } from "./pages/estoque/estoque.component";
+import { DoacaoComponent } from "./pages/doacao/doacao.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, LoginComponent, RedefinirsenhaComponent, RecuperarsenhaComponent, HomeComponent],
+  imports: [RouterOutlet, RouterLink, LoginComponent, RedefinirsenhaComponent, RecuperarsenhaComponent, HomeComponent, AdminComponent, EstoqueComponent, DoacaoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

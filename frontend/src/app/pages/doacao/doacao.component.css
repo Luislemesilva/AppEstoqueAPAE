@@ -14,26 +14,6 @@ body {
     margin-left: 656px;
     transform: translate(-38%, 1%);
     border-radius: 10px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    row-gap: 10px;
-    flex-direction: column;
-    text-align: center;
-    font-size: 2.5rem;
-    padding-top: 120px;
-
-}
-
-#principal_logo{
-    width: 185px;
-    height: 265px;
-    
-
-} 
-
-#name_profile{
-    font-size: 65px;
 }
 
 
@@ -76,8 +56,8 @@ body {
     border-top: 1px solid #ffffff; 
     margin: 65px auto;
     margin-left: 11px;
-    display: grid;
-    flex-direction: row;
+    
+    
     
 }
 
@@ -85,7 +65,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-size: 14px;
-    margin-left: 60px;
+    margin-left: 67px;
     margin-top: 25px;
     color: white;
 }
@@ -100,17 +80,21 @@ body {
 
 #out{
     margin-left: 180px;
-    height: 25px;
+    height: 23px;
     width: 28px;
     margin-bottom: 50px;
     transform: translate(0%, -130%);
+    
 
 }
 
 #profile{
-    height: 43px;
+    height: 43px ;
     width: 43px;
     transform: translate(0%, -265%);
+    
+ 
+    
 }
  
 
@@ -119,8 +103,4 @@ body {
     font-size: 28px; 
     padding: 0px 10px;
 }
-
-
-
-
-
+  
