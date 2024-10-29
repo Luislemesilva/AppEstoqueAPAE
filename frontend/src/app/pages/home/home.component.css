@@ -120,6 +120,32 @@ body {
     padding: 0px 10px;
 }
 
+@media (max-width: 768px) {
+    #white {
+        width: 90%;
+        height: auto;
+        padding: 80px 20px;
+    }
+    #name_profile {
+        font-size: 35px;
+    }
+    #principal_logo {
+        width: 120px;
+        height: 180px;
+    }
+    .sidenav {
+        width: 150px;
+    }
+    .sidenav button {
+        width: 140px;
+        font-size: 16px;
+    }
+    .main {
+        font-size: 24px;
+        margin-left: 130px;
+    }
+}
+
 
 
 
