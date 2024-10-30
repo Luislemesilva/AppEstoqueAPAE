@@ -8,12 +8,12 @@ body {
 
 #white {
     background-color: #F8F8F8;
-    width: 1130px;
-    height: 629px;
+    width: 1070px;
+    height: 613px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-39%, -50%);
     border-radius: 10px;
     display: flex;
     justify-items: center;
@@ -23,6 +23,7 @@ body {
     text-align: center;
     font-size: 2.5rem;
     padding-top: 120px;
+
 }
 
 #principal_logo {
@@ -35,9 +36,9 @@ body {
 }
 
 #logo-aside {
-    width: 91px;
-    height: 131px;
-    transform: translate(80%, 0%);
+    width: 95px;
+    height: 133px;
+    transform: translate(76%, 0%);
 }
 
 .sidenav {
@@ -53,15 +54,17 @@ body {
 }
   
 .sidenav button {
+    justify-items: center;
     margin-top: 60px;
     height: 50px;
     width: 190px;
-    margin-left: 20px;
+    margin-left: 25px;
     font-size: 20px;
     background-color: #2A455A;
     border-color: #2A455A;
     border-radius: 10px;
     color: white;
+    padding: 0;
 }
 
 .sidenav button:hover {
@@ -72,36 +75,36 @@ body {
 .line {
     border-top: 1px solid #ffffff; 
     margin: 65px auto;
-    margin-left: 11px;
-    display: grid;
-    flex-direction: row;
+    margin-left: 10px;
 }
 
 #name {
+    padding-left: 60px;
+    padding-top: 20px;
     font-size: 14px;
-    margin-left: 60px;
-    margin-top: 25px;
     color: white;
+    margin: 0;
 }
 
 #job {
     font-size: 12px;
     margin-left: 72px;
     color: white;
+  
 }
 
 #out {
     margin-left: 180px;
-    height: 25px;
-    width: 28px;
-    margin-bottom: 50px;
-    transform: translate(0%, -130%);
+    height: 27px;
+    width: 30px;
+    margin-bottom: 32px;
+    transform: translate(-12%, -180%);
 }
 
 #profile {
     height: 43px;
     width: 43px;
-    transform: translate(0%, -265%);
+    transform: translate(5%, -265%);
 }
 
 .main {
