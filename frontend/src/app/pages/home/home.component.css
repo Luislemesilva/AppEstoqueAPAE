@@ -1,245 +1,177 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Ubuntu", sans-serif;
     background-color: #2A455A;
-    height: 100vh; 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #white {
     background-color: #F8F8F8;
-    width: 1130px;
-    height: 629px;
-    position: absolute;
-    margin-left: 656px;
-    transform: translate(-38%, 1%);
-    border-radius: 10px;
+    width: 80%; /* Responsivo com base na largura da tela */
+    max-width: 1200px; /* Limite para telas grandes */
+    padding: 5% 3%; /* Padding adaptativo */
+    border-radius: 0.625rem;
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    row-gap: 10px;
     flex-direction: column;
     text-align: center;
-    font-size: 2.5rem;
-    padding-top: 120px;
+    font-size: 1.5rem;
+    box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 #principal_logo {
-    width: 185px;
-    height: 265px;
-} 
+    width: 15vw;
+    max-width: 12.5rem;
+    height: auto;
+}
 
 #name_profile {
-    font-size: 65px;
+    font-size: 3rem;
+    margin-top: 1rem;
 }
 
 #logo-aside {
-    width: 91px;
-    height: 131px;
-    transform: translate(80%, 0%);
+    width: 8vw;
+    max-width: 6.25rem;
+    height: auto;
+    margin-top: 1rem;
 }
 
 .sidenav {
-    height: 100%;
-    width: 220px;
     position: fixed;
-    z-index: 1;
-    top: 0;
     left: 0;
+    top: 0;
+    width: 12vw;
+    min-width: 10rem;
+    max-width: 13.75rem;
+    height: 100%;
     background-color: #2A455A;
-    overflow-x: hidden;
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
 }
-  
+
 .sidenav button {
-    margin-top: 60px;
-    height: 50px;
-    width: 190px;
-    margin-left: 20px;
-    font-size: 20px;
+    width: 80%;
+    max-width: 11.25rem;
+    height: 3.125rem;
+    font-size: 1rem;
     background-color: #2A455A;
-    border-color: #2A455A;
-    border-radius: 10px;
+    border: none;
+    color: #fff;
+    border-radius: 0.625rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .sidenav button:hover {
     background-color: #d4d4d444;
-    transition: all 0.3s ease-in-out;
 }
-  
+
 .line {
-    border-top: 1px solid #ffffff; 
-    margin: 65px auto;
-    margin-left: 11px;
-    display: grid;
-    flex-direction: row;
+    width: 80%;
+    border-top: 1px solid #ffffff;
+    margin: 2rem 0;
 }
 
 #name {
-    margin: 0px;
-    padding: 0px;
-    font-size: 14px;
-    margin-left: 60px;
-    margin-top: 25px;
+    font-size: 1rem;
     color: white;
+    margin-top: 1rem;
 }
 
 #job {
-    margin: 0px;
-    padding: 0px;
-    font-size: 12px;
-    margin-left: 72px;
+    font-size: 0.875rem;
     color: white;
+    margin-top: 0.5rem;
 }
 
-#out {
-    margin-left: 180px;
-    height: 25px;
-    width: 28px;
-    margin-bottom: 50px;
-    transform: translate(0%, -130%);
-}
-
-#profile {
-    height: 43px;
-    width: 43px;
-    transform: translate(0%, -265%);
+#out, #profile {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 1rem 0;
 }
 
 .main {
-    margin-left: 160px; 
-    font-size: 28px; 
-    padding: 0px 10px;
+    margin-left: calc(12vw + 1rem); /* Margem para compensar a sidebar */
+    font-size: 1.75rem;
+    padding: 1rem;
+    width: calc(100% - 13vw);
 }
 
-/* Media Queries para Responsividade entre 1920x1080 e 1024x600 */
+/* Media Queries para Responsividade */
 
-/* Até 1920px */
-@media (max-width: 1920px) {
+/* Telas grandes (1600px e acima) */
+@media (min-width: 1600px) {
     #white {
-        width: 1000px;
-        height: 580px;
+        width: 70%;
     }
     #name_profile {
-        font-size: 60px;
-    }
-}
-
-/* Até 1600px */
-@media (max-width: 1600px) {
-    #white {
-        width: 900px;
-        height: 520px;
-    }
-    #name_profile {
-        font-size: 55px;
-    }
-    .sidenav button {
-        width: 180px;
+        font-size: 4rem;
     }
 }
 
-/* Até 1366px */
-@media (max-width: 1366px) {
+/* Telas médias (1366px a 1600px) */
+@media (max-width: 1600px) and (min-width: 1366px) {
     #white {
-        width: 750px;
-        height: 480px;
-        font-size: 2rem;
+        width: 75%;
     }
     #name_profile {
-        font-size: 45px;
+        font-size: 3.5rem;
     }
-    #principal_logo {
-        width: 150px;
-        height: 215px;
+}
+
+/* Telas menores (1024px a 1366px) */
+@media (max-width: 1366px) and (min-width: 1024px) {
+    #white {
+        width: 85%;
+        font-size: 1.25rem;
+    }
+    #name_profile {
+        font-size: 3rem;
     }
     .sidenav {
-        width: 180px;
-    }
-    .sidenav button {
-        width: 160px;
-        font-size: 18px;
-    }
-}
-
-/* Até 1280px */
-@media (max-width: 1280px) {
-    #white {
-        width: 700px;
-        height: 450px;
-        padding-top: 100px;
-    }
-    #name_profile {
-        font-size: 40px;
-    }
-    #principal_logo {
-        width: 130px;
-        height: 180px;
-    }
-    .sidenav {
-        width: 160px;
-    }
-    .sidenav button {
-        width: 150px;
-        font-size: 16px;
+        width: 14vw;
     }
     .main {
-        margin-left: 150px;
+        margin-left: calc(14vw + 1rem);
     }
 }
 
-/* Até 1024px */
+/* Telas pequenas (1024px) */
 @media (max-width: 1024px) {
     #white {
         width: 90%;
-        height: auto;
-        padding: 80px 20px;
-        font-size: 1.8rem;
+        padding: 4%;
+        font-size: 1.125rem;
     }
     #name_profile {
-        font-size: 35px;
+        font-size: 2.5rem;
     }
     #principal_logo {
-        width: 120px;
-        height: 160px;
+        width: 20vw;
     }
     .sidenav {
-        width: 140px;
-    }
-    .sidenav button {
-        width: 130px;
-        font-size: 14px;
+        width: 15vw;
     }
     .main {
-        font-size: 24px;
-        margin-left: 130px;
-    }
-}
-
-/* Até 1024x600 */
-@media (max-width: 1024px) and (max-height: 600px) {
-    #white {
-        width: 85%;
-        height: auto;
-        padding: 60px 15px;
-        font-size: 1.5rem;
-    }
-    #name_profile {
-        font-size: 30px;
-    }
-    #principal_logo {
-        width: 100px;
-        height: 150px;
-    }
-    .sidenav {
-        width: 120px;
+        margin-left: calc(15vw + 1rem);
     }
     .sidenav button {
-        width: 110px;
-        font-size: 12px;
-    }
-    .main {
-        font-size: 20px;
-        margin-left: 110px;
+        font-size: 0.9rem;
+        height: 2.8125rem;
     }
 }
