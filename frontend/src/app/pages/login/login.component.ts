@@ -15,8 +15,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 
 export class LoginComponent {
-  email: string = '';
-  senha: string = '';
   
   constructor(private router: Router) {}
   

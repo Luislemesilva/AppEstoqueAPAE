@@ -14,4 +14,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 })
 export class HomeComponent {
 
+  
+  constructor(private router: Router) {}
+  
+  adminRouter() {
+    this.router.navigate(['/admin']);
+  }
 }
