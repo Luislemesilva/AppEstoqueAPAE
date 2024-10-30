@@ -1,177 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body {
     font-family: "Ubuntu", sans-serif;
     background-color: #2A455A;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100vh; 
 }
 
 #white {
     background-color: #F8F8F8;
-    width: 80%; /* Responsivo com base na largura da tela */
-    max-width: 1200px; /* Limite para telas grandes */
-    padding: 5% 3%; /* Padding adaptativo */
-    border-radius: 0.625rem;
+    width: 1130px;
+    height: 629px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
+    row-gap: 10px;
     flex-direction: column;
     text-align: center;
-    font-size: 1.5rem;
-    box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    font-size: 2.5rem;
+    padding-top: 120px;
 }
 
 #principal_logo {
-    width: 15vw;
-    max-width: 12.5rem;
-    height: auto;
+    width: 185px;
+    height: 265px;
 }
 
 #name_profile {
-    font-size: 3rem;
-    margin-top: 1rem;
+    font-size: 65px;
 }
 
 #logo-aside {
-    width: 8vw;
-    max-width: 6.25rem;
-    height: auto;
-    margin-top: 1rem;
+    width: 91px;
+    height: 131px;
+    transform: translate(80%, 0%);
 }
 
 .sidenav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 12vw;
-    min-width: 10rem;
-    max-width: 13.75rem;
     height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
     background-color: #2A455A;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2rem;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
-
+  
 .sidenav button {
-    width: 80%;
-    max-width: 11.25rem;
-    height: 3.125rem;
-    font-size: 1rem;
+    margin-top: 60px;
+    height: 50px;
+    width: 190px;
+    margin-left: 20px;
+    font-size: 20px;
     background-color: #2A455A;
-    border: none;
-    color: #fff;
-    border-radius: 0.625rem;
-    margin: 1rem 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    border-color: #2A455A;
+    border-radius: 10px;
+    color: white;
 }
 
 .sidenav button:hover {
     background-color: #d4d4d444;
+    transition: all 0.3s ease-in-out;
 }
 
 .line {
-    width: 80%;
-    border-top: 1px solid #ffffff;
-    margin: 2rem 0;
+    border-top: 1px solid #ffffff; 
+    margin: 65px auto;
+    margin-left: 11px;
+    display: grid;
+    flex-direction: row;
 }
 
 #name {
-    font-size: 1rem;
+    font-size: 14px;
+    margin-left: 60px;
+    margin-top: 25px;
     color: white;
-    margin-top: 1rem;
 }
 
 #job {
-    font-size: 0.875rem;
+    font-size: 12px;
+    margin-left: 72px;
     color: white;
-    margin-top: 0.5rem;
 }
 
-#out, #profile {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin: 1rem 0;
+#out {
+    margin-left: 180px;
+    height: 25px;
+    width: 28px;
+    margin-bottom: 50px;
+    transform: translate(0%, -130%);
+}
+
+#profile {
+    height: 43px;
+    width: 43px;
+    transform: translate(0%, -265%);
 }
 
 .main {
-    margin-left: calc(12vw + 1rem); /* Margem para compensar a sidebar */
-    font-size: 1.75rem;
-    padding: 1rem;
-    width: calc(100% - 13vw);
-}
-
-/* Media Queries para Responsividade */
-
-/* Telas grandes (1600px e acima) */
-@media (min-width: 1600px) {
-    #white {
-        width: 70%;
-    }
-    #name_profile {
-        font-size: 4rem;
-    }
-}
-
-/* Telas médias (1366px a 1600px) */
-@media (max-width: 1600px) and (min-width: 1366px) {
-    #white {
-        width: 75%;
-    }
-    #name_profile {
-        font-size: 3.5rem;
-    }
-}
-
-/* Telas menores (1024px a 1366px) */
-@media (max-width: 1366px) and (min-width: 1024px) {
-    #white {
-        width: 85%;
-        font-size: 1.25rem;
-    }
-    #name_profile {
-        font-size: 3rem;
-    }
-    .sidenav {
-        width: 14vw;
-    }
-    .main {
-        margin-left: calc(14vw + 1rem);
-    }
-}
-
-/* Telas pequenas (1024px) */
-@media (max-width: 1024px) {
-    #white {
-        width: 90%;
-        padding: 4%;
-        font-size: 1.125rem;
-    }
-    #name_profile {
-        font-size: 2.5rem;
-    }
-    #principal_logo {
-        width: 20vw;
-    }
-    .sidenav {
-        width: 15vw;
-    }
-    .main {
-        margin-left: calc(15vw + 1rem);
-    }
-    .sidenav button {
-        font-size: 0.9rem;
-        height: 2.8125rem;
-    }
+    margin-left: 160px;
+    font-size: 28px;
+    padding: 0px 10px;
 }
