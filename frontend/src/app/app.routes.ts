@@ -11,26 +11,19 @@ import { EstoqueComponent } from './pages/estoque/estoque.component';
 import { DoacaoComponent } from './pages/doacao/doacao.component';
 
 
-
-
-
 export const routes: Routes = [
-    {path: '', component: LoginComponent},
+    {path: 'login', component: LoginComponent},
     {path: 'redefinirarsenha', component: RedefinirsenhaComponent},
     {path: 'recuperarsenha', component: RecuperarsenhaComponent},
     {path: 'home', component: HomeComponent},
     {path: 'admin', component: AdminComponent},
     {path: 'estoque', component: EstoqueComponent},
     {path: 'doacao', component: DoacaoComponent},
-
-    
    
 ];
 
 @NgModule({
-    imports: [
-        RouterModule.forRoot(routes, {
-    })],
+    imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]
   })
 

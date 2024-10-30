@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');   
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body {
     font-family: "Ubuntu", sans-serif;
@@ -8,19 +8,37 @@ body {
 
 #white {
     background-color: #F8F8F8;
-    width: 1130px;
-    height: 629px;
+    width: 1070px;
+    height: 613px;
     position: absolute;
-    margin-left: 656px;
-    transform: translate(-38%, 1%);
+    left: 50%;
+    top: 50%;
+    transform: translate(-39%, -50%);
     border-radius: 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 120px;
+
 }
 
+#principal_logo {
+    width: 185px;
+    height: 265px;
+}
 
-#logo-aside{
-    width: 91px;
-    height: 131px;
-    transform: translate(80%, 0%);
+#name_profile {
+    font-size: 65px;
+}
+
+#logo-aside {
+    width: 95px;
+    height: 133px;
+    transform: translate(76%, 0%);
 }
 
 .sidenav {
@@ -36,71 +54,61 @@ body {
 }
   
 .sidenav button {
+    justify-items: center;
     margin-top: 60px;
     height: 50px;
     width: 190px;
-    margin-left: 20px;
+    margin-left: 25px;
     font-size: 20px;
     background-color: #2A455A;
     border-color: #2A455A;
     border-radius: 10px;
-    
+    color: white;
+    padding: 0;
 }
 
 .sidenav button:hover {
     background-color: #d4d4d444;
     transition: all 0.3s ease-in-out;
 }
-  
-.line{
+
+.line {
     border-top: 1px solid #ffffff; 
     margin: 65px auto;
-    margin-left: 11px;
-    
-    
-    
+    margin-left: 10px;
 }
 
-#name{
-    margin: 0px;
-    padding: 0px;
+#name {
+    padding-left: 60px;
+    padding-top: 20px;
     font-size: 14px;
-    margin-left: 67px;
-    margin-top: 25px;
     color: white;
+    margin: 0;
 }
 
 #job {
-    margin: 0px;
-    padding: 0px;
     font-size: 12px;
     margin-left: 72px;
     color: white;
+  
 }
 
-#out{
+#out {
     margin-left: 180px;
-    height: 23px;
-    width: 28px;
-    margin-bottom: 50px;
-    transform: translate(0%, -130%);
-    
-
+    height: 27px;
+    width: 30px;
+    margin-bottom: 32px;
+    transform: translate(-12%, -180%);
 }
 
-#profile{
-    height: 43px ;
+#profile {
+    height: 43px;
     width: 43px;
-    transform: translate(0%, -265%);
-    
- 
-    
+    transform: translate(5%, -265%);
 }
- 
 
 .main {
-    margin-left: 160px; 
-    font-size: 28px; 
+    margin-left: 160px;
+    font-size: 28px;
     padding: 0px 10px;
 }
-  
