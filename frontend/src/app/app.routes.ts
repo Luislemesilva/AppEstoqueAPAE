@@ -7,8 +7,8 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './pages/admin/admin.component';
-import { DoacaoComponent } from './pages/doacao/doacao.component';
 import { EstoqueComponent } from './pages/estoque/estoque.component';
+import { DoacaoComponent } from './pages/doacao/doacao.component';
 
 
 export const routes: Routes = [
@@ -17,8 +17,8 @@ export const routes: Routes = [
     {path: 'recuperarsenha', component: RecuperarsenhaComponent},
     {path: 'home', component: HomeComponent},
     {path: 'admin', component: AdminComponent},
-    {path: 'doacao', component: DoacaoComponent},
     {path: 'estoque', component: EstoqueComponent},
+    {path: 'doacao', component: DoacaoComponent},
    
 ];
 

@@ -85,7 +85,7 @@ img {
     text-align: center;
 }
 
-.formLogin a {
+.formLogin button {
     font-size: 16px;
     color: #000000;
     transition: all linear 160ms;

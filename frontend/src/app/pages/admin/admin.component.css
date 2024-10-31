@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');   
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body {
     font-family: "Ubuntu", sans-serif;
@@ -15,16 +15,10 @@ body {
     position: absolute;
     transform: translate(-39%, -50%);
     display: flex;
+    justify-items: center;
     align-items: center;
-    row-gap: 40px;
+    row-gap: 10px;
     flex-direction: column;
-    padding-top: 15px;
-
-}
-
-.form-title {
-    font-size: 24px;
-    font-weight: bold;
     text-align: center;
     margin-bottom: 43px;
     color: #2f4858;
@@ -35,10 +29,12 @@ body {
     height: 100%;
 }
 
+
 .row{
     display: flex;
     justify-content: center;
 }
+
 
 .container-form{
     width: 80%;
@@ -55,14 +51,25 @@ body {
     height: 43px;
     width: 17%;
     font-size: 1rem;
+
 }
 
+#principal_logo {
+    width: 185px;
+    height: 265px;
+}
+
+#name_profile {
+    font-size: 65px;
+}
 
 #logo-aside{
     width: 95px;
     height: 133px;
     transform: translate(76%, 0%);
+
 }
+
 
 .sidenav {
     height: 100%;
@@ -94,15 +101,15 @@ body {
     background-color: #d4d4d444;
     transition: all 0.3s ease-in-out;
 }
-  
-.line{
+
+.line {
     border-top: 1px solid #ffffff; 
     margin: 65px auto;
     margin-left: 10px;
-
 }
 
-#name{
+#name {
+
     padding-left: 60px;
     padding-top: 20px;
     font-size: 14px;
@@ -116,27 +123,24 @@ body {
     color: white;
 }
 
-#out{
+#out {
     margin-left: 180px;
     height: 27px;
     width: 30px;
     margin-bottom: 32px;
     transform: translate(-12%, -180%);
-    
-
 }
 
-#profile{
-    height: 43px ;
+#profile {
+    height: 43px;
     width: 43px;
     transform: translate(5%, -265%);
-
 }
- 
 
 .main {
-    margin-left: 160px; 
-    font-size: 28px; 
+    margin-left: 160px;
+    font-size: 28px;
     padding: 0px 10px;
 }
-  
+
+

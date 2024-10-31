@@ -15,18 +15,4 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
 
-  constructor(private router: Router) {}
-
-  estoque() {
-    this.router.navigate(['/estoque']);
-  }
-
-  admin() {
-    this.router.navigate(['/admin']);
-  }
-
-  doacao() {
-    console.log("Navegando para /doacao");
-    this.router.navigate(['/doacao']);
-  }
 }
