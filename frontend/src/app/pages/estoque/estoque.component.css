@@ -8,12 +8,10 @@ body {
 
 #white {
     background-color: #F8F8F8;
-    width: 1070px;
-    height: 613px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-39%, -50%);
+    transform: translate(-38%, 1%);
+    margin-top: 6px;
+    width: 1130px;
+    height: 629px;
     border-radius: 10px;
     display: flex;
     justify-items: center;
@@ -23,6 +21,8 @@ body {
     text-align: center;
     font-size: 2.5rem;
     padding-top: 120px;
+    margin-left: 656px;
+
 
 }
 
@@ -33,17 +33,18 @@ body {
 
 #name_profile {
     font-size: 65px;
+
 }
 
 #logo-aside {
     width: 95px;
     height: 133px;
-    transform: translate(76%, 0%);
+    margin-left: 30%;
 }
 
 .sidenav {
-    height: 100%;
-    width: 220px;
+    height: 99%;
+    width: 18%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -75,7 +76,8 @@ body {
 .line {
     border-top: 1px solid #ffffff; 
     margin: 65px auto;
-    margin-left: 10px;
+    margin-left: 7%;
+    margin-right: 9%;
 }
 
 #name {
@@ -90,7 +92,6 @@ body {
     font-size: 12px;
     margin-left: 72px;
     color: white;
-  
 }
 
 #out {
@@ -112,3 +113,5 @@ body {
     font-size: 28px;
     padding: 0px 10px;
 }
+
+
