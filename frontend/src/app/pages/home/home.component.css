@@ -8,13 +8,12 @@ body {
 
 #white {
     background-color: #F8F8F8;
-    width: 1070px;
-    height: 613px;
+    width: 1080px;
+    height: 622px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-39%, -50%);
-    border-radius: 10px;
     display: flex;
     justify-items: center;
     align-items: center;

@@ -8,12 +8,12 @@ body {
 
 #white {
     background-color: #F8F8F8;
-    width: 1130px;
-    height: 629px;
+    width: 1080px;
+    height: 622px;
+    left: 50%;
+    top: 50%;
     position: absolute;
-    margin-left: 656px;
-    transform: translate(-38%, 1%);
-    border-radius: 10px;
+    transform: translate(-39%, -50%);
     display: flex;
     align-items: center;
     row-gap: 40px;
@@ -29,17 +29,22 @@ body {
     margin-bottom: 43px;
     color: #2f4858;
 }
+
 .divider {
     border-left: 1px solid #ddd;
     height: 100%;
 }
 
+.row{
+    display: flex;
+    justify-content: center;
+}
 
 .container-form{
     width: 80%;
-
+    color: #000000;
+    
 }
-
 
 #save{
     background-color: #2A455A;
@@ -48,15 +53,15 @@ body {
     transition: all linear 160ms;
     cursor: pointer;
     height: 43px;
-    width: 150px;
+    width: 17%;
     font-size: 1rem;
 }
 
 
 #logo-aside{
-    width: 91px;
-    height: 131px;
-    transform: translate(80%, 0%);
+    width: 95px;
+    height: 133px;
+    transform: translate(76%, 0%);
 }
 
 .sidenav {
@@ -72,15 +77,17 @@ body {
 }
   
 .sidenav button {
+    justify-items: center;
     margin-top: 60px;
     height: 50px;
     width: 190px;
-    margin-left: 20px;
+    margin-left: 25px;
     font-size: 20px;
     background-color: #2A455A;
     border-color: #2A455A;
     border-radius: 10px;
-    
+    color: white;
+    padding: 0;
 }
 
 .sidenav button:hover {
@@ -91,24 +98,19 @@ body {
 .line{
     border-top: 1px solid #ffffff; 
     margin: 65px auto;
-    margin-left: 11px;
-    
-    
-    
+    margin-left: 10px;
+
 }
 
 #name{
-    margin: 0px;
-    padding: 0px;
+    padding-left: 60px;
+    padding-top: 20px;
     font-size: 14px;
-    margin-left: 67px;
-    margin-top: 25px;
     color: white;
+    margin: 0;
 }
 
 #job {
-    margin: 0px;
-    padding: 0px;
     font-size: 12px;
     margin-left: 72px;
     color: white;
@@ -116,10 +118,10 @@ body {
 
 #out{
     margin-left: 180px;
-    height: 23px;
-    width: 28px;
-    margin-bottom: 50px;
-    transform: translate(0%, -130%);
+    height: 27px;
+    width: 30px;
+    margin-bottom: 32px;
+    transform: translate(-12%, -180%);
     
 
 }
@@ -127,10 +129,8 @@ body {
 #profile{
     height: 43px ;
     width: 43px;
-    transform: translate(0%, -265%);
-    
- 
-    
+    transform: translate(5%, -265%);
+
 }
  
 

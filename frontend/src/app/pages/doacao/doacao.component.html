@@ -1,23 +1,41 @@
 <body>
-    <aside>
-        <div class="sidenav">
-            <img src="assets/logo-apae.png" alt="logo-apae" id="logo-aside">
-            <button type="button" class="btn btn-dark" data-bs-toggle="button">ADMINISTRAÇÃO</button>
-            <button type="button" class="btn btn-dark" data-bs-toggle="button">ESTOQUE</button>
-            <button type="button" class="btn btn-dark" data-bs-toggle="button">DOAÇÃO</button>
-            <div class="line">
-                <p id="name"><strong>Luis Eduardo</strong></p>
-                <p id="job">Nutricionista</p>
-                <img src="assets/sair.png" alt="" id="out">
-                <img src="assets/Foto.png" alt="p" id="profile">
-            </div>
-        </div>
-    </aside>
+  <aside>
+    <div class="sidenav">
+      <img src="assets/logo-apae.png" alt="logo-apae" id="logo-aside" />
+      <button type="button" class="btn btn-dark" data-bs-toggle="button"> ADMINISTRAÇÃO</button>
+      <button type="button" class="btn btn-dark" data-bs-toggle="button">ESTOQUE</button>
+      <button type="button" class="btn btn-dark" data-bs-toggle="button"> DOAÇÃO</button>
+      <div class="line">
+        <p id="name"><strong>Leticia Campos</strong></p>
+        <p id="job">Nutricionista</p>
+        <img src="assets/sair.png" alt="" id="out" />
+        <img src="assets/Foto.png" alt="p" id="profile" />
+      </div>
+    </div>
+  </aside>
 
-    <main>
-        <div id="white">
-            <h1 id="name"></h1>
-            <img src="assets/logo-apae.png" alt="">
-        </div>
-    </main>
+  <main>
+    <div id="white">
+      <div class="form-container">
+        <h2 class="form-title" style=" color: #2A455A; font-size: 2.1rem; text-align: center;">DOAÇÃO</h2>
+        <form>
+          <div class="d-flex justify-content-between mb-3" >
+            <div class="imput group">
+              <label for="donorId" class="form-label">ID do Doador</label>
+              <input type="text" class="form-control" id="donorId" placeholder="Digite o ID"/>
+            </div>
+            <div class="imput group">
+              <label for="donationDate" class="form-label">Data da Doação</label >
+              <input type="date" class="form-control" id="donationDate" />
+            </div>
+          </div>
+          <div class="imput group">
+            <label for="description" class="form-label" >Descrição</label>
+            <textarea class="form-control textarea-custom" id="description"  placeholder="Escreva uma descrição..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-custom">SALVAR</button>
+        </form>
+      </div>
+    </div>
+  </main>
 </body>
