@@ -40,7 +40,7 @@ body {
 #logo-aside {
     width: 95px;
     height: 133px;
-    margin-left: 30%;
+    transform: translate(76%, 0%);
 }
 
 .sidenav {
