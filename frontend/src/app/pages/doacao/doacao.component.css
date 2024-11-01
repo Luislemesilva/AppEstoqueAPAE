@@ -21,11 +21,12 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 1.5rem;
+    padding-top: 1.7rem;
 }
 
 .form-container {
     padding: 15%;
+    top: 50%;
 }
 
 
