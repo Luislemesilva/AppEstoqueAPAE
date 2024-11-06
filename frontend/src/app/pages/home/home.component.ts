@@ -30,8 +30,7 @@ export class HomeComponent {
   }
 
   confirmarSaida() {
-    // Lógica para confirmar a saída
-    console.log("Saindo da conta...");
-    this.fecharModal(); // Fecha o modal após a ação
+    this.router.navigate(['/login']);
+    console.log("Botão de sair clicado");
   }
 }

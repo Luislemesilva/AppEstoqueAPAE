@@ -15,7 +15,6 @@ body {
     position: absolute;
     transform: translate(-39%, -50%);
     color: #2f4858;
-
 }
 
 .header-title {
@@ -24,11 +23,11 @@ body {
     color: #2c3e50;
     text-align: center;
     margin-bottom: 13vh;
-  }
+}
 
 .input-group{
     margin-left: 65px;
-  }
+}
 
 #btn-acess{
     margin-right: 13vh;
@@ -36,7 +35,6 @@ body {
 
 #result{
     padding-left: 9vh;
-
 }
 
 #filter{
@@ -49,24 +47,21 @@ body {
     font-size: 0.9rem;
     width: 100%;
   }
-  
-  .btn {
-    margin-right: 10vh;
+
+.btn {
+    margin-right: 35px;
     padding: 8px 12px;
     font-size: 0.85rem;
-    background-color: #2c3e50;
     border: none;
     display: inline;
     justify-content: space-between;
   }
   
-
 .item-list {
     margin-top: 5px;
     align-items: center;
 }
   
-
 .item-card {
     display: flex;
     align-items: center;
@@ -79,17 +74,16 @@ body {
     border: 2px solid transparent;
     transition: border-color 0.3s;
     color: #2c3e50;
-    
-  }
+}
   
-  .item-card:hover {
+.item-card:hover {
     border-color: #007bff;
   }
   
 .item-icon {
     font-size: 2rem;
     margin-right: 15px;
-  }
+}
   
 .item-status {
     padding: 3px 10px;
@@ -97,17 +91,16 @@ body {
     color: white;
     font-weight: bold;
     font-size: 0.85rem;
-  }
+}
   
 .item-status.aberto {
     background-color: #28a745;
-  }
+}
   
 .item-status.fechado {
     background-color: #dc3545;
-  }
+}
   
-
 #principal_logo {
     width: 185px;
     height: 265px;
@@ -115,7 +108,6 @@ body {
 
 #name_profile {
     font-size: 65px;
-
 }
 
 #logo-aside {
@@ -230,4 +222,7 @@ body {
     border-color: #bd2130;
 }
 
+#bt{
+    margin-left: 35px;
+}
 

@@ -8,8 +8,25 @@
             <div class="line">
                 <p id="name"><strong>Leticia Campos</strong></p>
                 <p id="job">Nutricionista</p>
+                <button type="button" class="btn btn-primary" (click)="abrirModal()">Abrir Modal</button>
+
+                <div *ngIf="isModalOpen" class="modal show d-block" tabindex="-1" role="dialog" style="background: rgba(0,0,0,0.5);">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body text-center">
+                        <h5>Atenção, você está saindo da sua conta, deseja realmente continuar?</h5>
+                      </div>
+                      <div class="modal-footer d-flex justify-content-center" id="bt">
+                        <button type="button" class="btn btn-success" (click)="confirmarSaida()">Sim, desejo sair</button>
+                        <button type="button" class="btn btn-danger" (click)="fecharModal()" >Não, desejo ficar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
                 <img src="assets/sair.png" alt="" id="out">
                 <img src="assets/Foto.png" alt="p" id="profile">
+                
             </div>
         </div>
     </aside>
@@ -73,23 +90,6 @@
                         </div>
                       </div>
                     </div>
-              
-                <button type="button" class="btn btn-primary" (click)="abrirModal()">Abrir Modal</button>
-
-                <div *ngIf="isModalOpen" class="modal show d-block" tabindex="-1" role="dialog" style="background: rgba(0,0,0,0.5);">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-body text-center">
-                        <h5>Atenção, você está saindo da sua conta, deseja realmente continuar?</h5>
-                      </div>
-                      <div class="modal-footer d-flex justify-content-center">
-                        <button type="button" class="btn btn-success"  style="margin-right: 35px;" (click)="confirmarSaida()">Sim, desejo sair</button>
-                        <button type="button" class="btn btn-danger" (click)="fecharModal()">Não, desejo sair</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
     </main>
 </body>

@@ -8,7 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AdminComponent } from "./pages/admin/admin.component";
 import { EstoqueComponent } from "./pages/estoque/estoque.component";
 import { DoacaoComponent } from "./pages/doacao/doacao.component";
-import { BrowserModule } from '@angular/platform-browser';
+
 
 
 @Component({

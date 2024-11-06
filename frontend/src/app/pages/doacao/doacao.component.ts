@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-doacao',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterOutlet, ReactiveFormsModule],
   templateUrl: './doacao.component.html',
   styleUrl: './doacao.component.css'
 })
@@ -28,8 +29,7 @@ export class DoacaoComponent {
   }
 
   confirmarSaida() {
-    // Lógica para confirmar a saída
-    console.log("Saindo da conta...");
-    this.fecharModal(); // Fecha o modal após a ação
+    this.router.navigate(['/login']);
+    console.log("Botão de sair clicado");
   }
 }
