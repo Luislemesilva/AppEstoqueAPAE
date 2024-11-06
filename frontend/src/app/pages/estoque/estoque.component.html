@@ -1,95 +1,95 @@
 <body>
-    <aside>
-        <div class="sidenav">
-            <img src="assets/logo-apae.png" alt="logo-apae" id="logo-aside">
-            <button type="button" class="btn btn-dark" data-bs-toggle="button">ADMINISTRAÇÃO</button>
-            <button type="button" class="btn btn-dark" data-bs-toggle="button">ESTOQUE</button>
-            <button type="button" class="btn btn-dark" data-bs-toggle="button">DOAÇÃO</button>
-            <div class="line">
-                <p id="name"><strong>Leticia Campos</strong></p>
-                <p id="job">Nutricionista</p>
-                <button type="button" class="btn btn-primary" (click)="abrirModal()">Abrir Modal</button>
+  <aside>
+    <div class="sidenav">
+      <img src="assets/logo-apae.png" alt="logo-apae" id="logo-aside">
+      <button type="button" class="btn btn-dark" data-bs-toggle="button">ADMINISTRAÇÃO</button>
+      <button type="button" class="btn btn-dark" data-bs-toggle="button">ESTOQUE</button>
+      <button type="button" class="btn btn-dark" data-bs-toggle="button">DOAÇÃO</button>
+      <div class="line">
+        <p id="name"><strong>Leticia Campos</strong></p>
+        <p id="job">Nutricionista</p>
+        <button type="button" class="btn btn-primary" (click)="abrirModal()">Abrir Modal</button>
 
-                <div *ngIf="isModalOpen" class="modal show d-block" tabindex="-1" role="dialog" style="background: rgba(0,0,0,0.5);">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-body text-center">
-                        <h5>Atenção, você está saindo da sua conta, deseja realmente continuar?</h5>
-                      </div>
-                      <div class="modal-footer d-flex justify-content-center" id="bt">
-                        <button type="button" class="btn btn-success" (click)="confirmarSaida()">Sim, desejo sair</button>
-                        <button type="button" class="btn btn-danger" (click)="fecharModal()" >Não, desejo ficar</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <div *ngIf="isModalOpen" class="modal show d-block" tabindex="-1" role="dialog"
+          style="background: rgba(0,0,0,0.5);">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body text-center">
+                <h5>Atenção, você está saindo da sua conta, deseja realmente continuar?</h5>
               </div>
-                <img src="assets/sair.png" alt="" id="out">
-                <img src="assets/Foto.png" alt="p" id="profile">
-                
+              <div class="modal-footer d-flex justify-content-center" id="bt">
+                <button type="button" class="btn btn-success" (click)="confirmarSaida()">Sim, desejo sair</button>
+                <button type="button" class="btn btn-danger" (click)="fecharModal()">Não, desejo ficar</button>
+              </div>
             </div>
+          </div>
         </div>
-    </aside>
+      </div>
+      <img src="assets/sair.png" alt="" id="out">
+      <img src="assets/Foto.png" alt="p" id="profile">
+    </div>
+  </aside>
 
-    <main>
-        <div id="white">
-                  <div class="container mt-4">
-                    <div class="header-title">QUADRO DE ESTOQUE</div>
-                    <div class="d-flex justify-content-between mb-5 gap-5">
-                      <div class="input-group" style="width: 30%;">
-                        <span class="input-group-text"><i class="bi bi-search"></i></span>
-                        <input type="text" class="form-control" placeholder="Procure pelo item desejado">
-                      </div>
-                      <div id="btn-acess">
-                      <button class="btn btn-primary" style="font-weight: bold;">+ Adicionar Item</button>
-                      <button class="btn btn-primary" style="font-weight: bold;">- Remover Item</button>
-                      <button class="btn btn-primary" style="font-weight: bold;">Filtros</button>
-                     </div>
-                    </div>
-                
-                    <div class="d-flex justify-content-between align-items-center mb-2">
-                      <span id="result">Foram achados <strong>9</strong> itens</span>
-                      <div id="filter">
-                        Sort by:
-                        <a href="#" class="text-decoration-none">Date</a> 
-                        <i class="bi bi-caret-down-fill"></i>
-                      </div>
-                    </div>
+  <main>
+    <div id="white">
+      <div class="container mt-4">
+        <div class="header-title">QUADRO DE ESTOQUE</div>
+        <div class="d-flex justify-content-between mb-5 gap-5">
+          <div class="input-group" style="width: 30%;">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input type="text" class="form-control" placeholder="Procure pelo item desejado">
+          </div>
+          <div id="btn-acess">
+            <button class="btn btn-primary" style="font-weight: bold;">+ Adicionar Item</button>
+            <button class="btn btn-primary" style="font-weight: bold;">- Remover Item</button>
+            <button class="btn btn-primary" style="font-weight: bold;">Filtros</button>
+          </div>
+        </div>
 
-                    <div id="item-list" style="width: 100%;">
-                      <div class="item-card active">
-                        <div class="item-icon">🍚</div>
-                        <div>
-                          <div>Arroz <span class="item-status aberto ms-2">Aberto</span></div>
-                        </div>
-                        <div class="ms-auto text-end">
-                          <div>Quantidade: 4x</div>
-                          <small>Vencimento: 19/10/2024</small>
-                        </div>
-                      </div>
-            
-                      <div class="item-card">
-                        <div class="item-icon">🥕</div>
-                        <div>
-                          <div>Cenoura <span class="item-status fechado ms-2">Fechado</span></div>
-                        </div>
-                        <div class="ms-auto text-end">
-                          <div>Quantidade: 7x</div>
-                          <small>Vencimento: 03/10/2024</small>
-                        </div>
-                      </div>
-            
-                      <div class="item-card">
-                        <div class="item-icon">🐟</div>
-                        <div>
-                          <div>Peixe <span class="item-status aberto ms-2">Aberto</span></div>
-                        </div>
-                        <div class="ms-auto text-end">
-                          <div>Quantidade: 10x</div>
-                          <small>Vencimento: 15/09/2024</small>
-                        </div>
-                      </div>
-                    </div>
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <span id="result">Foram achados <strong>9</strong> itens</span>
+          <div id="filter">
+            Sort by:
+            <a href="#" class="text-decoration-none">Date</a>
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+        </div>
+
+        <div id="item-list" style="width: 100%;">
+          <div class="item-card active">
+            <div class="item-icon">🍚</div>
+            <div>
+              <div>Arroz <span class="item-status aberto ms-2">Aberto</span></div>
             </div>
-    </main>
+            <div class="ms-auto text-end">
+              <div>Quantidade: 4x</div>
+              <small>Vencimento: 19/10/2024</small>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-icon">🥕</div>
+            <div>
+              <div>Cenoura <span class="item-status fechado ms-2">Fechado</span></div>
+            </div>
+            <div class="ms-auto text-end">
+              <div>Quantidade: 7x</div>
+              <small>Vencimento: 03/10/2024</small>
+            </div>
+          </div>
+
+          <div class="item-card">
+            <div class="item-icon">🐟</div>
+            <div>
+              <div>Peixe <span class="item-status aberto ms-2">Aberto</span></div>
+            </div>
+            <div class="ms-auto text-end">
+              <div>Quantidade: 10x</div>
+              <small>Vencimento: 15/09/2024</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
